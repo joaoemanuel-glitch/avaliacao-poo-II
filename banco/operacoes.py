@@ -8,7 +8,7 @@ class Operacao:
 
     def __str__(self):
         return f"[{self.__data}] {self.__tipo}: R$ {self.__valor:.2f}"
-        retorna a data e a hora da operação, o tipo de operação e o valor que foi usado na operação
+        #retorna a data e a hora da operação, o tipo de operação e o valor que foi usado na operação
 
 class Historico:
     def __init__(self):
