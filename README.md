@@ -2,7 +2,7 @@
 
 # Sistema de Caixa Eletrônico (ATM) - POO em Python
 
-Este projeto é uma simulação de um sistema bancário desenvolvido como atividade prática para a disciplina de Programação Orientada a Objetos. O objetivo é aplicar conceitos fundamentais de POO em um cenário de gerenciamento de contas e operações financeiras.
+Este projeto é uma simulação de um sistema bancário desenvolvido como atividade prática para a disciplina de Programação Orientada a Objetos. O objetivo é aplicar conceitos fundamentais de POO ao gerenciar contas e operações financeiras.
 
 ## Funcionalidades
 - **Criação de Contas:** Cria Contas Corrente e Contas Poupança.
