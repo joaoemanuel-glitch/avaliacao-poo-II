@@ -40,10 +40,10 @@ class BancoATM:
 
                 if opcao == "2":
                     valor = float(input("Valor do depósito: "))
-                    if conta.depositar(val): print(f"Valor de {valor} depositado com sucesso!")
+                    if conta.depositar(valor): print(f"Valor de {valor} depositado com sucesso!")
                 elif opcao == "3":
                     valor = float(input("Valor do saque: "))
-                    if conta.sacar(val): print(f"Valor de {valor} sacado com sucesso!")
+                    if conta.sacar(valor): print(f"Valor de {valor} sacado com sucesso!")
                     else: print("Saldo insuficiente!")
                 elif opcao == "4":
                     print(f"Saldo: R$ {conta.saldo:.2f}")
