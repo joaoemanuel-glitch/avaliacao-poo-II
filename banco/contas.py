@@ -27,7 +27,7 @@ class Conta: # Classe base
         print(f"\n--- Extrato Conta {self._numero} ---")
         for t in self.__historico.listar_historico():
             print(t)
-        print(f"Saldo Atual: R$ {self._saldo:.2f}")
+        print(f"Saldo Atual: R$ {self._saldo:.2f}") # mostra o saldo atual
 
 class ContaCorrente(Conta): # Subclasse
     def sacar(self, valor):
