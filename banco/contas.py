@@ -31,9 +31,8 @@ class Conta: # Classe base
 
 class ContaCorrente(Conta): # Subclasse
     def sacar(self, valor):
-        taxa = 2.00  # Exemplo de regra diferente para CC
-        if valor + taxa <= self._saldo: # se o valor for menor ou igual ao saldo
-            self._saldo -= (valor + taxa) # extrai o valor sacado do saldo
+        if valor <= self._saldo: # se o valor for menor ou igual ao saldo
+            self._saldo -= valor # extrai o valor sacado do saldo
             self._Conta__historico.adicionar_transacao(Operacao("Saque (CC)", valor))
             return True
         return False
