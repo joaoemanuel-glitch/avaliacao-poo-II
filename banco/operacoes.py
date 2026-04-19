@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime # importa a biblioteca datetime que vai ser usada para mostrar o horário e o dia das operações realizadas
 
 class Operacao:
     def __init__(self, tipo, valor):
@@ -17,4 +17,6 @@ class Historico:
         self.__transacoes.append(operacao) # adiciona uma operação na lista de transações
 
     def listar_historico(self):
-        return self.__transacoes if self.__transacoes else ["Nenhuma operação realizada."]
+        return self.__transacoes 
+        if self.__transacoes 
+        else ["Nenhuma operação realizada."]
