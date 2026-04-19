@@ -14,21 +14,8 @@ Este projeto é uma simulação de um sistema bancário desenvolvido como ativid
 O projeto foi estruturado utilizando os seguintes pilares:
 1. **Pacotes:** Organização em pastas e módulos.
 2. **Classes e Objetos:** Representação de Clientes, Contas e Operações.
-3. **Herança:** As subclasse `ContaCorrente` e `ContaPoupanca` herdam da classe base `Conta`.
-4. **Polimorfismo:** Sobrescrita do método `sacar()` nas subclasses `ContaCorrente` e `ContaPoupanca`.
-5. **Encapsulamento:** Uso de atributos privados (`__`) e protegidos (`_`) para segurança dos dados.
-6. **Agregação:** A classe `BancoATM` gerencia múltiplos objetos de contas.
-7. **Composição:** A classe `Conta` possui um `Historico`, que não existe sem a conta.
-
-## Estrutura de Pastas
-```text
-sistema_atm/
-│
-├── banco/                # Pacote principal
-│   ├── __init__.py       # Inicializador do pacote
-│   ├── clientes.py       # Classe Cliente
-│   ├── contas.py         # Classes de Contas (Usam herança e polimorfismo)
-│   └── operacoes.py      # Classes de Operação e Histórico (Usam composição)
-│
-├── main.py               # Código principal
-└── README.md             # Documentação do projeto
+3. **Herança:** As subclasse "ContaCorrente" e "ContaPoupanca" herdam da classe base "Conta".
+4. **Polimorfismo:** O método "sacar()" é sobrescrito nas subclasses "ContaCorrente" e "ContaPoupanca".
+5. **Encapsulamento:** Uso de atributos privados (__) e protegidos (_) para segurança dos dados.
+6. **Agregação:** A classe "BancoATM" gerencia múltiplos objetos de contas.
+7. **Composição:** A classe "Conta" possui um "Historico", que não existe sem a conta.
