@@ -3,8 +3,7 @@ from banco.contas import ContaCorrente, ContaPoupanca
 
 class BancoATM:
     def __init__(self):
-        # Agregação: O banco guarda contas, mas elas podem ser criadas fora
-        self.contas = {}
+        self.contas = {} # Agregação (o banco guarda contas, mas elas podem ser criadas fora)
 
     def menu(self):
         while True:
@@ -22,7 +21,7 @@ class BancoATM:
                 nome = input("Nome do cliente: ")
                 cpf = input("CPF: ")
                 num = input("Número da conta: ")
-                tipo = input("Tipo (1-Corrente / 2-Poupança): ")
+                tipo = input("Tipo (1-Corrente ou 2-Poupança): ")
                 
                 cliente = Cliente(nome, cpf)
                 if tipo == "1":
