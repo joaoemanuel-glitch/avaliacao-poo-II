@@ -1,4 +1,5 @@
-from banco.operacoes import Historico, Operacao
+from banco.operacoes import Historico
+from banco.operacoes import Operacao
 
 class Conta:
     def __init__(self, numero, cliente):
