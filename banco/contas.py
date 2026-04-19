@@ -1,13 +1,12 @@
 from banco.operacoes import Historico
 from banco.operacoes import Operacao
 
-class Conta:
+class Conta: # Classe base
     def __init__(self, numero, cliente):
         self._numero = numero
         self._cliente = cliente
         self._saldo = 0.0
-        # Composição: O Histórico é criado dentro da Conta
-        self.__historico = Historico()
+        self.__historico = Historico() # Composição (o Histórico é criado dentro da Conta)
 
     @property
     def saldo(self):
@@ -30,7 +29,7 @@ class Conta:
             print(t)
         print(f"Saldo Atual: R$ {self._saldo:.2f}")
 
-class ContaCorrente(Conta):
+class ContaCorrente(Conta): # Subclasse
     def sacar(self, valor):
         taxa = 2.00  # Exemplo de regra diferente para CC
         if valor + taxa <= self._saldo:
@@ -39,7 +38,7 @@ class ContaCorrente(Conta):
             return True
         return False
 
-class ContaPoupanca(Conta):
+class ContaPoupanca(Conta): # Subclasse
     def sacar(self, valor):
         if valor <= self._saldo:
             self._saldo -= valor
