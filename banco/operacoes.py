@@ -18,3 +18,4 @@ class Historico:
 
     def listar_historico(self):
         return self.__transacoes if self.__transacoes else ["Nenhuma operação realizada."]
+        # se houver, lista o histórico de transações, caso contrário, informa que não há nenhuma operação realizada
