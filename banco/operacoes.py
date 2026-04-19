@@ -11,10 +11,10 @@ class Operacao:
 
 class Historico:
     def __init__(self):
-        self.__transacoes = []
+        self.__transacoes = [] # lista de transações criada internamente
 
     def adicionar_transacao(self, operacao):
-        self.__transacoes.append(operacao)
+        self.__transacoes.append(operacao) # adiciona uma operação na lista de transações
 
     def listar_historico(self):
         return self.__transacoes if self.__transacoes else ["Nenhuma operação realizada."]
