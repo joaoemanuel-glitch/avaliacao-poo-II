@@ -20,7 +20,7 @@ class Conta: # Classe base
         return False
 
     def sacar(self, valor):
-        # Será sobrescrito nas subclasses (Polimorfismo)
+        # Esse método vai ser escrito novamente nas subclasses usando polimorfismo
         pass
 
     def exibir_extrato(self):
