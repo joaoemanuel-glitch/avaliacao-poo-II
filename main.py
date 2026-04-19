@@ -1,11 +1,11 @@
-from banco.clientes import Cliente
-from banco.contas import ContaCorrente, ContaPoupanca
+from banco.clientes import Cliente # importa a classe Cliente do arquivo clientes
+from banco.contas import ContaCorrente, ContaPoupanca # importa as classes ContaCorrente e ContaPoupanca do arquivo contas
 
 class BancoATM:
     def __init__(self):
         self.contas = {} # Agregação (o banco guarda contas, mas elas podem ser criadas fora)
 
-    def menu(self):
+    def menu(self): # função do menu principal
         while True:
             print("\n--- CAIXA ELETRÔNICO ---")
             print("1 - Criar Conta")
@@ -17,7 +17,7 @@ class BancoATM:
             
             opcao = input("Escolha uma opção: ")
 
-            if opcao == "1":
+            if opcao == "1": # opção de criar conta
                 nome = input("Nome do cliente: ")
                 cpf = input("CPF: ")
                 num = input("Número da conta: ")
@@ -38,19 +38,19 @@ class BancoATM:
                     print("Conta não encontrada!")
                     continue
 
-                if opcao == "2":
+                if opcao == "2": # opção de depositar
                     valor = float(input("Valor do depósito: "))
                     if conta.depositar(valor): print(f"Valor de {valor} depositado com sucesso!")
-                elif opcao == "3":
+                elif opcao == "3": # opção de sacar
                     valor = float(input("Valor do saque: "))
                     if conta.sacar(valor): print(f"Valor de {valor} sacado com sucesso!")
                     else: print("Saldo insuficiente!")
-                elif opcao == "4":
+                elif opcao == "4": # opção de consultar saldo
                     print(f"Saldo: R$ {conta.saldo:.2f}")
-                elif opcao == "5":
+                elif opcao == "5": # opção de verificar o histórico
                     conta.exibir_extrato()
 
-            elif opcao == "0":
+            elif opcao == "0": # opção de sair
                 break
 
 if __name__ == "__main__":
