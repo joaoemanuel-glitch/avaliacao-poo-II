@@ -17,6 +17,4 @@ class Historico:
         self.__transacoes.append(operacao) # adiciona uma operação na lista de transações
 
     def listar_historico(self):
-        return self.__transacoes 
-        if self.__transacoes 
-        else ["Nenhuma operação realizada."]
+        return self.__transacoes if self.__transacoes else ["Nenhuma operação realizada."]
